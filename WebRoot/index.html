@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="javascript" src="Ajax.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Xenon Boostrap Admin Panel" />
+	<meta name="author" content="" />
+
+	<title>设备维修系统</title>
+	<!-- Bootstrap -->
+    <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="vendors/nprogress/nprogress.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="build/css/custom.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="http://fonts.useso.com/css?family=Arimo:400,700,400italic">
+	<link rel="stylesheet" href="assets/css/fonts/linecons/css/linecons.css">
+	<link rel="stylesheet" href="assets/css/fonts/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/css/xenon-core.css">
+	<link rel="stylesheet" href="assets/css/xenon-forms.css">
+	<link rel="stylesheet" href="assets/css/xenon-components.css">
+	<link rel="stylesheet" href="assets/css/xenon-skins.css">
+	<link rel="stylesheet" href="assets/css/custom.css">
+
+	<script src="assets/js/jquery-1.11.1.min.js"></script>
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.min.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+
+
+</head>
+<body class="page-body">
+
+
+
+	<div class="page-container"><!-- add class "sidebar-collapsed" to close sidebar by default, "chat-visible" to make chat appear always -->
+
+		<!-- Add "fixed" class to make the sidebar fixed always to the browser viewport. -->
+		<!-- Adding class "toggle-others" will keep only one menu item open at a time. -->
+		<!-- Adding class "collapsed" collapse sidebar root elements and show only icons. -->
+		<div class="sidebar-menu toggle-others fixed">
+
+			<div class="sidebar-menu-inner">
+
+				<header class="logo-env">
+
+					<!-- logo -->
+					<div class="logo">
+						<a href="dashboard-1.html" class="logo-expanded">
+							<img src="assets/images/logo@2x.png" width="80" alt="" />
+						</a>
+
+						<a href="dashboard-1.html" class="logo-collapsed">
+							<img src="assets/images/logo-collapsed@2x.png" width="40" alt="" />
+						</a>
+					</div>
+
+					<!-- This will toggle the mobile menu and will be visible only on mobile devices -->
+					<div class="mobile-menu-toggle visible-xs">
+						<a href="#" data-toggle="user-info-menu">
+							<i class="fa-bell-o"></i>
+							<span class="badge badge-success">7</span>
+						</a>
+
+						<a href="#" data-toggle="mobile-menu">
+							<i class="fa-bars"></i>
+						</a>
+					</div>
+
+					<!-- This will open the popup with user profile settings, you can use for any purpose, just be creative -->
+
+
+
+				</header>
+
+
+
+				<ul id="main-menu" class="main-menu">
+					<!-- add class "multiple-expanded" to allow multiple submenus to open -->
+					<!-- class "auto-inherit-active-class" will automatically add "active" class for parent elements who are marked already with class "active" -->
+					<li>
+						<a href="dashboard-1.html">
+							<i class="linecons-cog"></i>
+							<span class="title">客服角色模块</span>
+						</a>
+						<ul>
+							<li>
+								<a href="dashboard-1.html">
+									<span class="title">Dashboard 1</span>
+								</a>
+							</li>
+							<li>
+								<a href="dashboard-2.html">
+									<span class="title">Dashboard 2</span>
+								</a>
+							</li>
+							<li>
+								<a href="dashboard-3.html">
+									<span class="title">Dashboard 3</span>
+								</a>
+							</li>
+							<li>
+								<a href="dashboard-4.html">
+									<span class="title">Dashboard 4</span>
+								</a>
+							</li>
+							<li>
+								<a href="skin-generator.html">
+									<span class="title">Skin Generator</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="layout-variants.html">
+							<i class="linecons-desktop"></i>
+							<span class="title">任务调度角色模块</span>
+						</a>
+						<ul>
+							<li>
+								<a href="layout-variants.html">
+									<span class="title">Layout Variants &amp; API</span>
+								</a>
+							</li>
+							<li>
+								<a href="layout-collapsed-sidebar.html">
+									<span class="title">Collapsed Sidebar</span>
+								</a>
+							</li>
+							<li>
+								<a href="layout-static-sidebar.html">
+									<span class="title">Static Sidebar</span>
+								</a>
+							</li>
+							<li>
+								<a href="layout-horizontal-menu.html">
+									<span class="title">Horizontal Menu</span>
+								</a>
+							</li>
+							<li>
+								<a href="layout-horizontal-plus-sidebar.html">
+									<span class="title">Horizontal &amp; Sidebar Menu</span>
+								</a>
+							</li>
+							<li>
+								<a href="layout-horizontal-menu-click-to-open-subs.html">
+									<span class="title">Horizontal Open On Click</span>
+								</a>
+							</li>
+							<li>
+								<a href="layout-horizontal-menu-min.html">
+									<span class="title">Horizontal Menu Minimal</span>
+								</a>
+							</li>
+							<li>
+								<a href="layout-right-sidebar.html">
+									<span class="title">Right Sidebar</span>
+								</a>
+							</li>
+							<li>
+								<a href="layout-chat-open.html">
+									<span class="title">Chat Open</span>
+								</a>
+							</li>
+							<li>
+								<a href="layout-horizontal-sidebar-menu-collapsed-right.html">
+									<span class="title">Both Menus &amp; Collapsed</span>
+								</a>
+							</li>
+							<li>
+								<a href="layout-boxed.html">
+									<span class="title">Boxed Layout</span>
+								</a>
+							</li>
+							<li>
+								<a href="layout-boxed-horizontal-menu.html">
+									<span class="title">Boxed &amp; Horizontal Menu</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="title">weidea.net</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="ui-panels.html">
+							<i class="linecons-note"></i>
+							<span class="title">技术工程师角色模块</span>
+						</a>
+						<ul>
+							<li>
+								<a href="ui-panels.html">
+									<span class="title">Panels</span>
+								</a>
+							</li>
+							<li>
+								<a href="ui-buttons.html">
+									<span class="title">Buttons</span>
+								</a>
+							</li>
+							<li>
+								<a href="ui-tabs-accordions.html">
+									<span class="title">Tabs &amp; Accordions</span>
+								</a>
+							</li>
+							<li>
+								<a href="ui-modals.html">
+									<span class="title">Modals</span>
+								</a>
+							</li>
+							<li>
+								<a href="ui-breadcrumbs.html">
+									<span class="title">Breadcrumbs</span>
+								</a>
+							</li>
+							<li>
+								<a href="ui-blockquotes.html">
+									<span class="title">Blockquotes</span>
+								</a>
+							</li>
+							<li>
+								<a href="ui-progressbars.html">
+									<span class="title">Progress Bars</span>
+								</a>
+							</li>
+							<li>
+								<a href="ui-navbars.html">
+									<span class="title">Navbars</span>
+								</a>
+							</li>
+							<li>
+								<a href="ui-alerts.html">
+									<span class="title">Alerts</span>
+								</a>
+							</li>
+							<li>
+								<a href="ui-pagination.html">
+									<span class="title">Pagination</span>
+								</a>
+							</li>
+							<li>
+								<a href="ui-typography.html">
+									<span class="title">Typography</span>
+								</a>
+							</li>
+							<li>
+								<a href="ui-other-elements.html">
+									<span class="title">Other Elements</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="mailbox-main.html">
+							<i class="linecons-mail"></i>
+							<span class="title">库管角色模块</span>
+						</a>
+						<ul>
+							<li>
+								<a href="mailbox-main.html">
+									<span class="title">Inbox</span>
+								</a>
+							</li>
+							<li>
+								<a href="mailbox-compose.html">
+									<span class="title">Compose Message</span>
+								</a>
+							</li>
+							<li>
+								<a href="mailbox-message.html">
+									<span class="title">View Message</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="mailbox-main.html">
+							<i class="linecons-mail"></i>
+							<span class="title">财务人员角色模块</span>
+						</a>
+						<ul>
+							<li>
+								<a href="mailbox-main.html">
+									<span class="title">Inbox</span>
+								</a>
+							</li>
+							<li>
+								<a href="mailbox-compose.html">
+									<span class="title">Compose Message</span>
+								</a>
+							</li>
+							<li>
+								<a href="mailbox-message.html">
+									<span class="title">View Message</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+						</ul>
+					</li>
+				</ul>
+
+			</div>
+
+		</div>
+		<!--到这里左边栏结束了-->
+	  <div class="main-content">
+			<!--这里是页面最上边一行显示的用户信息之类的东西-->
+			<!-- User Info, Notifications and Menu Bar -->
+			<nav class="navbar user-info-navbar" role="navigation">
+
+				<!-- Left links for user info navbar -->
+				<ul class="user-info-menu left-links list-inline list-unstyled">
+
+					<li class="hidden-sm hidden-xs">
+						<a href="#" data-toggle="sidebar">
+							<i class="fa-bars"></i>
+						</a>
+					</li>
+
+
+
+
+
+				</ul>
+
+
+				<!-- Right links for user info navbar -->
+				<ul class="user-info-menu right-links list-inline list-unstyled">
+
+
+
+					<li class="dropdown user-profile">
+						<a href="#" data-toggle="dropdown">
+							<img src="assets/images/user-4.png" alt="user-image" class="img-circle img-inline userpic-32" width="28" />
+							<span>
+								Arlind Nushi
+								<i class="fa-angle-down"></i>
+							</span>
+						</a>
+
+						<ul class="dropdown-menu user-profile-menu list-unstyled">
+							<li>
+								<a href="#edit-profile">
+									<i class="fa-edit"></i>
+									New Post
+								</a>
+							</li>
+							<li>
+								<a href="#settings">
+									<i class="fa-wrench"></i>
+									Settings
+								</a>
+							</li>
+							<li>
+								<a href="#profile">
+									<i class="fa-user"></i>
+									Profile
+								</a>
+							</li>
+							<li>
+								<a href="#help">
+									<i class="fa-info"></i>
+									Help
+								</a>
+							</li>
+							<li class="last">
+								<a href="extra-lockscreen.html">
+									<i class="fa-lock"></i>
+									Logout
+								</a>
+							</li>
+						</ul>
+					</li>
+
+				</ul>
+
+			</nav>
+            <!--这里是正文的开头上面的那一部分（hint）-->
+			<div class="page-title">
+				<!--这个是这个页面的hint -->
+			  <div class="title-env">
+					<h1 class="title">Vector Maps</h1>
+					<p class="description">Vector maps variants using jQuery plugin jVectorMap</p>
+				</div>
+					<!-- 这个是显示该页面的路径和依赖-->
+			  <div class="breadcrumb-env">
+
+								<ol class="breadcrumb bc-1">
+									<li>
+							<a href="dashboard-1.html"><i class="fa-home"></i>Home</a>
+						</li>
+								<li>
+
+										<a href="extra-gallery.html">Extra</a>
+								</li>
+							<li>
+
+										<a href="extra-maps-google.html">Maps</a>
+								</li>
+							<li class="active">
+
+										<strong>Vector Map</strong>
+								</li>
+								</ol>
+
+				</div>
+
+			</div>
+            <!--页面的正文信息-->
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">结算查询</h3>
+					<div class="panel-options">
+						<a href="#" data-toggle="panel">
+							<span class="collapse-icon">&ndash;</span>
+							<span class="expand-icon">+</span>
+						</a>
+						<a href="#" data-toggle="remove">
+							&times;
+						</a>
+					</div>
+				</div>
+				<div class="panel-body">
+                	<div id="wizard" class="form_wizard wizard_horizontal">
+                      <ul class="wizard_steps">
+                        <li>
+                          <a href="#step-1">
+                            <span class="step_no">1</span>
+                            <span class="step_descr">
+                                              Step 1<br />
+                                              <small>客户信息</small>
+                                          </span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#step-2">
+                            <span class="step_no">2</span>
+                            <span class="step_descr">
+                                              Step 2<br />
+                                              <small>设备信息</small>
+                                          </span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#step-3">
+                            <span class="step_no">3</span>
+                            <span class="step_descr">
+                                              Step 3<br />
+                                              <small>报修信息</small>
+                                          </span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#step-4">
+                            <span class="step_no">4</span>
+                            <span class="step_descr">
+                                              Step 4<br />
+                                              <small>确认订单</small>
+                                          </span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#step-5">
+                            <span class="step_no">5</span>
+                            <span class="step_descr">
+                                              Step 5<br />
+                                              <small>提交维修</small>
+                                          </span>
+                          </a>
+                        </li>
+                      </ul>
+                      <div id="step-1">
+                        <form class="form-horizontal form-label-left">
+
+                          <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">ID <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input type="text" required class="form-control col-md-7 col-xs-12" onblur="validate()" id="id">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">姓名 <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input type="text" id="last-name" name="last-name" required class="form-control col-md-7 col-xs-12">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">客户类型 </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">单位名称 </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">座机 </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">移动电话 <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">居住地址 <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">邮编 </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">电子邮件 </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                            </div>
+                          </div>
+                        </form>
+
+                      </div>
+                      <div id="step-2">
+                        <form class="form-horizontal form-label-left" id="deviceInfo">
+
+                          <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name" id="Series">序列号 <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input type="text" required class="form-control col-md-7 col-xs-12">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name" id="Type">产品类型 <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input type="text" id="last-name" name="last-name" required class="form-control col-md-7 col-xs-12">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12" id="Brand">机器品牌 </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12" id="Model">机器型号 </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12" id="Lack">缺少零件 </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12" id="FaultAppearance">机器故障现象 <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12" id="FaultType">故障类型 <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12" id="Surface">机器外观检查 </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12" id="Password">开机口令 </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name" id="ImpFile">重要资料 </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input type="text" id="last-name" name="last-name" required class="form-control col-md-7 col-xs-12">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12" id="HDD">HDD </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12" id="Memory">内存 </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12" id="PC">外置PC卡 </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12" id="AC">AC适配器 </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12" id="Battery">电池 </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12" id="DVD">外接光驱 </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12" id="Other">其他 </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                            </div>
+                          </div>
+                        </form>
+                       </div>
+                      <div id="step-3">
+                        <h2 class="StepTitle">Step 3 Content</h2>
+                        <form class="form-horizontal form-label-left">
+
+                          <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">报修设备 <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input type="text" required class="form-control col-md-7 col-xs-12">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">报修用户ID <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input type="text" id="last-name" name="last-name" required class="form-control col-md-7 col-xs-12">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">报修时间 </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">预估价格 </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">预估完成时间 </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">报修状态 <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">居住地址 <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">邮编 </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">电子邮件 </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div id="step-4">
+                        <h2 class="StepTitle">Step 4 Content</h2>
+                        <form class="form-horizontal form-label-left">
+
+                          <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">报修时间 <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input type="text" required class="form-control col-md-7 col-xs-12">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">报修编号 <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input type="text" id="last-name" name="last-name" required class="form-control col-md-7 col-xs-12">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">接修日期 </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">维修编号 </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">产品类型 </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">序列号 <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">单位名称 <span class="required">*</span>
+                            </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">联系人 </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">机器故障现象 </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">缺少零件 </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">随机附件 </label>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                              <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                      <div id="step-5">
+                        <h2 class="StepTitle">Step 5 Content</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                      </div>
+
+                    </div>
+                    <!-- End SmartWizard Content -->
+			</div>
+            </div>
+			<!-- Main Footer -->
+			<!-- Choose between footer styles: "footer-type-1" or "footer-type-2" -->
+			<!-- Add class "sticky" to  always stick the footer to the end of page (if page contents is small) -->
+			<!-- Or class "fixed" to  always fix the footer to the end of page -->
+			<footer class="main-footer sticky footer-type-1">
+
+				<div class="footer-inner">
+
+					<!-- Add your copyright text here -->
+					<div class="footer-text">
+						&copy; 2014
+						<strong>Xenon</strong>
+						More Templates <a href="http://h2design.taobao.com/" target="_blank" title="氢设计">氢设计</a> - Collect from <a href="#/" title="网页模板" target="_blank">网页模板</a>
+					</div>
+
+
+					<!-- Go to Top Link, just add rel="go-top" to any link to add this functionality -->
+					<div class="go-up">
+
+						<a href="#" rel="go-top">
+							<i class="fa-angle-up"></i>
+						</a>
+
+					</div>
+
+				</div>
+
+			</footer>
+		</div>
+	<!-- Imported styles on this page -->
+	<link rel="stylesheet" href="assets/js/datatables/dataTables.bootstrap.css">
+
+	<!-- Bottom Scripts -->
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/TweenMax.min.js"></script>
+	<script src="assets/js/resizeable.js"></script>
+	<script src="assets/js/joinable.js"></script>
+	<script src="assets/js/xenon-api.js"></script>
+	<script src="assets/js/xenon-toggles.js"></script>
+	<script src="assets/js/datatables/js/jquery.dataTables.min.js"></script>
+
+
+	<!-- Imported scripts on this page -->
+	<script src="assets/js/datatables/dataTables.bootstrap.js"></script>
+	<script src="assets/js/datatables/yadcf/jquery.dataTables.yadcf.js"></script>
+	<script src="assets/js/datatables/tabletools/dataTables.tableTools.min.js"></script>
+	<!-- Bottom Scripts -->
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/TweenMax.min.js"></script>
+	<script src="assets/js/resizeable.js"></script>
+	<script src="assets/js/joinable.js"></script>
+	<script src="assets/js/xenon-api.js"></script>
+	<script src="assets/js/xenon-toggles.js"></script>
+
+
+	<!-- Imported scripts on this page -->
+	<script src="assets/js/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+	<script src="assets/js/jvectormap/regions/jquery-jvectormap-world-mill-en.js"></script>
+	<script src="assets/js/jvectormap/regions/jquery-jvectormap-it-mill-en.js"></script>
+
+
+	<!-- JavaScripts initializations and stuff -->
+	<script src="assets/js/xenon-custom.js"></script>
+	<!-- jQuery -->
+    <script src="vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="vendors/nprogress/nprogress.js"></script>
+    <!-- jQuery Smart Wizard -->
+    <script src="vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="build/js/custom.min.js"></script>
+
+    <!-- jQuery Smart Wizard -->
+    <script>
+      $(document).ready(function(){
+      // Smart Wizard
+      $('#wizard').smartWizard({
+          onLeaveStep:leaveAStepCallback,
+          onFinish:onFinishCallback
+      });
+
+      function leaveAStepCallback(obj, context){
+          alert("Leaving step " + context.fromStep + " to go to step " + context.toStep);
+          return validateSteps(context.fromStep); // return false to stay on step and true to continue navigation
+          // return true;
+      }
+
+      function onFinishCallback(objs, context){
+          if(validateAllSteps()){
+              $('form').submit();
+          }
+      }
+
+      // Your Step validation logic
+      function validateSteps(stepnumber){
+          // var isStepValid = true;
+          // validate step 1
+          if (stepnumber == 1) {
+          	return true;
+              // Your step validation logic
+              // set isStepValid = false if has errors
+          } else if  (stepnumber == 2) {
+			$.post("servlet/AddDevice", {
+			'Series':$("#Series").value(),
+			'Type':$("#Type"),
+			'Brand':$("#Brand"),
+			'Model':$("#Model"),
+			'Lack':$("#Lack"),
+			'FaultAppearance':$("#FaultAppearance"),
+			'FaultType':$("#FaultType"),
+			'Surface':$("#Surface"),
+			'Password':$("#Password"),
+			'ImpFile':$("#ImpFile"),
+			'HDD':$("#HDD"),
+			'Memory':$("#Memory"),
+			'PC':$("#PC"),
+			'AC':$("#AC"),
+			'Battery':$("#Battery"),
+			'DVD':$("#DVD"),
+			'Other':$("#Other"),})
+          	return true;
+          } else if  (stepnumber == 3) {
+          	return true;
+          } else if  (stepnumber == 4) {
+          	return true;
+          } else if  (stepnumber == 5) {
+          	return true;
+          }
+          // ...
+      }
+      function validateAllSteps(){
+          var isStepValid = true;
+          alert("all");
+          // all step validation logic
+          return isStepValid;
+         }
+      });
+    $(document).ready(function() {
+      $('#wizard').smartWizard();
+
+        $('#wizard_verticle').smartWizard({
+          transitionEffect: 'slide'
+        });
+
+        $('.buttonNext').addClass('btn btn-success');
+        $('.buttonPrevious').addClass('btn btn-primary');
+        $('.buttonFinish').addClass('btn btn-default');
+      });
+    </script>
+    <script>
+      var req;
+      function validate() {
+          //获取表单提交的内容
+          var idField = document.getElementById("id");
+          alert(idField.value);
+          //访问validate.do这个servlet，同时把获取的表单内容idField加入url字符串，以便传递给validate.do
+          var url = "validate.do?id=" + escape(idField.value);
+          //创建一个XMLHttpRequest对象req
+          if(window.XMLHttpRequest) {
+              //IE7, Firefox, Opera支持
+              req = new XMLHttpRequest();
+          }else if(window.ActiveXObject) {
+              //IE5,IE6支持
+              req = new ActiveXObject("Microsoft.XMLHTTP");
+          }
+          /*
+           open(String method,String url, boolean )函数有3个参数
+           method参数指定向servlet发送请求所使用的方法，有GET,POST等
+           boolean值指定是否异步，true为使用，false为不使用。
+           我们使用异步才能体会到Ajax强大的异步功能。
+           */
+          req.open("GET", url, true);
+          //onreadystatechange属性存有处理服务器响应的函数,有5个取值分别代表不同状态
+          req.onreadystatechange = callback;
+          //send函数发送请求
+          req.send(null);
+      }
+
+      function callback() {
+          if(req.readyState == 4 && req.status == 200) {
+              var check = req.responseText;
+              show (check);
+          }
+      }
+
+      function show(str) {
+      	  alert(str);
+          if(str == "OK") {
+              var show = "<font color='green'>恭喜！！用户名可用！</font>";
+              document.getElementById("info").innerHTML = show;
+          }
+          else if( str == "NO") {
+              var show = "<font color='red'>对不起，用户名不可用！！请重新输入！</font>";
+              document.getElementById("info").innerHTML = show;
+          }
+      }
+    </script>
+    <!-- /jQuery Smart Wizard -->
+
+</body>
+</html>

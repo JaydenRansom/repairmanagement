@@ -1,0 +1,538 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Xenon Boostrap Admin Panel" />
+	<meta name="author" content="" />
+	
+	<title>Xenon - Tables</title>
+
+	<link rel="stylesheet" href="http://fonts.useso.com/css?family=Arimo:400,700,400italic">
+	<link rel="stylesheet" href="assets/css/fonts/linecons/css/linecons.css">
+	<link rel="stylesheet" href="assets/css/fonts/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/css/xenon-core.css">
+	<link rel="stylesheet" href="assets/css/xenon-forms.css">
+	<link rel="stylesheet" href="assets/css/xenon-components.css">
+	<link rel="stylesheet" href="assets/css/xenon-skins.css">
+	<link rel="stylesheet" href="assets/css/custom.css">
+
+	<script src="assets/js/jquery-1.11.1.min.js"></script>
+</head>
+
+<body class="page-body">
+<div class="page-container"><!-- add class "sidebar-collapsed" to close sidebar by default, "chat-visible" to make chat appear always -->
+            
+        <!-- Add "fixed" class to make the sidebar fixed always to the browser viewport. -->
+        <!-- Adding class "toggle-others" will keep only one menu item open at a time. -->
+        <!-- Adding class "collapsed" collapse sidebar root elements and show only icons. -->
+        <div class="sidebar-menu toggle-others fixed">
+            
+            <div class="sidebar-menu-inner">    
+                
+                <header class="logo-env">
+                    
+                    <!-- logo -->
+                    <div class="logo">
+                        <a href="dashboard-1.html" class="logo-expanded">
+                            <img src="assets/images/logo@2x.png" width="80" alt="" />
+                        </a>
+                        
+                        <a href="dashboard-1.html" class="logo-collapsed">
+                            <img src="assets/images/logo-collapsed@2x.png" width="40" alt="" />
+                        </a>
+                    </div>
+                    
+                    <!-- This will toggle the mobile menu and will be visible only on mobile devices -->
+                    <div class="mobile-menu-toggle visible-xs">
+                        <a href="#" data-toggle="user-info-menu">
+                            <i class="fa-bell-o"></i>
+                            <span class="badge badge-success">7</span>
+                        </a>
+                        
+                        <a href="#" data-toggle="mobile-menu">
+                            <i class="fa-bars"></i>
+                        </a>
+                    </div>
+                    
+                    <!-- This will open the popup with user profile settings, you can use for any purpose, just be creative -->
+                    
+                    
+                                
+                </header>
+                        
+                
+                        
+                <ul id="main-menu" class="main-menu">
+                    <!-- add class "multiple-expanded" to allow multiple submenus to open -->
+                    <!-- class "auto-inherit-active-class" will automatically add "active" class for parent elements who are marked already with class "active" -->
+                    <li>
+                        <a href="dashboard-1.html">
+                            <i class="linecons-cog"></i>
+                            <span class="title">¿Í·þ½ÇÉ«Ä£¿é</span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="dashboard-1.html">
+                                    <span class="title">Dashboard 1</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dashboard-2.html">
+                                    <span class="title">Dashboard 2</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dashboard-3.html">
+                                    <span class="title">Dashboard 3</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="dashboard-4.html">
+                                    <span class="title">Dashboard 4</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="skin-generator.html">
+                                    <span class="title">Skin Generator</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="layout-variants.html">
+                            <i class="linecons-desktop"></i>
+                            <span class="title">ÈÎÎñµ÷¶È½ÇÉ«Ä£¿é</span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="layout-variants.html">
+                                    <span class="title">Layout Variants &amp; API</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="layout-collapsed-sidebar.html">
+                                    <span class="title">Collapsed Sidebar</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="layout-static-sidebar.html">
+                                    <span class="title">Static Sidebar</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="layout-horizontal-menu.html">
+                                    <span class="title">Horizontal Menu</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="layout-horizontal-plus-sidebar.html">
+                                    <span class="title">Horizontal &amp; Sidebar Menu</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="layout-horizontal-menu-click-to-open-subs.html">
+                                    <span class="title">Horizontal Open On Click</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="layout-horizontal-menu-min.html">
+                                    <span class="title">Horizontal Menu Minimal</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="layout-right-sidebar.html">
+                                    <span class="title">Right Sidebar</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="layout-chat-open.html">
+                                    <span class="title">Chat Open</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="layout-horizontal-sidebar-menu-collapsed-right.html">
+                                    <span class="title">Both Menus &amp; Collapsed</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="layout-boxed.html">
+                                    <span class="title">Boxed Layout</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="layout-boxed-horizontal-menu.html">
+                                    <span class="title">Boxed &amp; Horizontal Menu</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="title">weidea.net</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="ui-panels.html">
+                            <i class="linecons-note"></i>
+                            <span class="title">¼¼Êõ¹¤³ÌÊ¦½ÇÉ«Ä£¿é</span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="ui-panels.html">
+                                    <span class="title">Panels</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="ui-buttons.html">
+                                    <span class="title">Buttons</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="ui-tabs-accordions.html">
+                                    <span class="title">Tabs &amp; Accordions</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="ui-modals.html">
+                                    <span class="title">Modals</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="ui-breadcrumbs.html">
+                                    <span class="title">Breadcrumbs</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="ui-blockquotes.html">
+                                    <span class="title">Blockquotes</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="ui-progressbars.html">
+                                    <span class="title">Progress Bars</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="ui-navbars.html">
+                                    <span class="title">Navbars</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="ui-alerts.html">
+                                    <span class="title">Alerts</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="ui-pagination.html">
+                                    <span class="title">Pagination</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="ui-typography.html">
+                                    <span class="title">Typography</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="ui-other-elements.html">
+                                    <span class="title">Other Elements</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="mailbox-main.html">
+                            <i class="linecons-mail"></i>
+                            <span class="title">¿â¹Ü½ÇÉ«Ä£¿é</span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="mailbox-main.html">
+                                    <span class="title">Inbox</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailbox-compose.html">
+                                    <span class="title">Compose Message</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailbox-message.html">
+                                    <span class="title">View Message</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="mailbox-main.html">
+                            <i class="linecons-mail"></i>
+                            <span class="title">²ÆÎñÈËÔ±½ÇÉ«Ä£¿é</span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="mailbox-main.html">
+                                    <span class="title">Inbox</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailbox-compose.html">
+                                    <span class="title">Compose Message</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailbox-message.html">
+                                    <span class="title">View Message</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>   
+                        </ul>
+                    </li>
+                </ul>
+                        
+            </div>
+            
+        </div>
+        <div class="main-content">
+            <!--ÕâÀïÊÇÒ³Ãæ×îÉÏ±ßÒ»ÐÐÏÔÊ¾µÄÓÃ»§ÐÅÏ¢Ö®ÀàµÄ¶«Î÷-->     
+            <!-- User Info, Notifications and Menu Bar -->
+            <nav class="navbar user-info-navbar" role="navigation">
+                
+                <!-- Left links for user info navbar -->
+                <ul class="user-info-menu left-links list-inline list-unstyled">
+                    
+                    <li class="hidden-sm hidden-xs">
+                        <a href="#" data-toggle="sidebar">
+                            <i class="fa-bars"></i>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                </ul>
+                
+                
+                <!-- Right links for user info navbar -->
+                <ul class="user-info-menu right-links list-inline list-unstyled">
+                    
+                    
+                    
+                    <li class="dropdown user-profile">
+                        <a href="#" data-toggle="dropdown">
+                            <img src="assets/images/user-4.png" alt="user-image" class="img-circle img-inline userpic-32" width="28" />
+                            <span>
+                                Arlind Nushi
+                                <i class="fa-angle-down"></i>
+                            </span>
+                        </a>
+                        
+                        <ul class="dropdown-menu user-profile-menu list-unstyled">
+                            <li>
+                                <a href="#edit-profile">
+                                    <i class="fa-edit"></i>
+                                    New Post
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#settings">
+                                    <i class="fa-wrench"></i>
+                                    Settings
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#profile">
+                                    <i class="fa-user"></i>
+                                    Profile
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#help">
+                                    <i class="fa-info"></i>
+                                    Help
+                                </a>
+                            </li>
+                            <li class="last">
+                                <a href="extra-lockscreen.html">
+                                    <i class="fa-lock"></i>
+                                    Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+                
+            </nav>
+            <div class="page-title">
+                <!--Õâ¸öÊÇÕâ¸öÒ³ÃæµÄhint -->
+              <div class="title-env">
+                    <h1 class="title">Vector Maps</h1>
+                    <p class="description">Vector maps variants using jQuery plugin jVectorMap</p>
+                </div>
+                    <!-- Õâ¸öÊÇÏÔÊ¾¸ÃÒ³ÃæµÄÂ·¾¶ºÍÒÀÀµ-->
+              <div class="breadcrumb-env">
+                    
+                                <ol class="breadcrumb bc-1">
+                                    <li>
+                            <a href="dashboard-1.html"><i class="fa-home"></i>Home</a>
+                        </li>
+                                <li>
+                        
+                                        <a href="extra-gallery.html">Extra</a>
+                                </li>
+                            <li>
+                        
+                                        <a href="extra-maps-google.html">Maps</a>
+                                </li>
+                            <li class="active">
+                        
+                                        <strong>Vector Map</strong>
+                                </li>
+                                </ol>
+                                
+                </div>
+                    
+            </div>
+         <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">´ý½áËãµÄÎ¬ÐÞÐÅÏ¢</h3>
+                    
+                    <div class="panel-options">
+                        <a href="#" data-toggle="panel">
+                            <span class="collapse-icon">&ndash;</span>
+                            <span class="expand-icon">+</span>
+                        </a>
+                        <a href="#" data-toggle="remove">
+                            &times;
+                        </a>
+                    </div>
+                </div>
+    <div class="panel-body">   
+        
+								
+									<!-- Bordered + Striped Table -->
+									<strong>Bordered + Striped Table</strong>
+									
+									<table class="table table-bordered table-striped">
+										<tr>
+        	<td colspan="4" >111</td>
+            
+        </tr>
+        <tr>
+        	<td>111</td>
+            <td>111</td>
+            <td>111</td>
+            <td>111</td>
+        </tr>
+        <tr>
+        	<td>111</td>
+            <td>111</td>
+            <td>111</td>
+            <td>111</td>
+        </tr>
+        <tr>
+        	<td>111</td>
+            <td>111</td>
+            <td>111</td>
+            <td>111</td>
+        </tr>
+        <tr>
+        	<td>111</td>
+            <td>111</td>
+            <td>111</td>
+            <td>111</td>
+        </tr>
+        <tr>
+        	<td>111</td>
+            <td>111</td>
+            <td>111</td>
+            <td>111</td>
+        </tr>
+        <tr>
+        	<td>111</td>
+            <td>111</td>
+            <td>111</td>
+            <td>111</td>
+        </tr>
+       <tr>
+        	<td colspan="4">111</td>
+            
+  </tr>
+        <tr>
+        	<td colspan="4">111</td>
+            
+  </tr>
+        <tr>
+        	<td colspan="2">111</td>
+            
+            <td colspan="2">111</td>
+            
+  </tr>
+        <tr>
+        	<td colspan="2">111</td>
+            
+            <td colspan="2">111</td>
+            
+  </tr>
+        <tr>
+        	<td>111</td>
+            <td>111</td>
+            <td>111</td>
+            <td>111</td>
+        </tr>
+       <tr>
+        	<td>111</td>
+            <td>111</td>
+            <td>111</td>
+            <td>111</td>
+        </tr>
+	</table>
+</div>
+</div>
+<footer class="main-footer sticky footer-type-1">
+                
+                <div class="footer-inner">
+                
+                    <!-- Add your copyright text here -->
+                    <div class="footer-text">
+                        &copy; 2014 
+                        <strong>Xenon</strong> 
+                        More Templates <a href="http://h2design.taobao.com/" target="_blank" title="ÇâÉè¼Æ">ÇâÉè¼Æ</a> - Collect from <a href="#/" title="ÍøÒ³Ä£°å" target="_blank">ÍøÒ³Ä£°å</a>
+                    </div>
+                    
+                    
+                    <!-- Go to Top Link, just add rel="go-top" to any link to add this functionality -->
+                    <div class="go-up">
+                    
+                        <a href="#" rel="go-top">
+                            <i class="fa-angle-up"></i>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+                
+            </footer>
+        </div>
+        <link rel="stylesheet" href="assets/js/datatables/dataTables.bootstrap.css">
+
+    <!-- Bottom Scripts -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/resizeable.js"></script>
+    <script src="assets/js/joinable.js"></script>
+    <script src="assets/js/xenon-api.js"></script>
+    <script src="assets/js/xenon-toggles.js"></script>
+
+
+    <!-- JavaScripts initializations and stuff -->
+    <script src="assets/js/xenon-custom.js"></script>
+</body>
+</html>

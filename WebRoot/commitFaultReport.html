@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>QueryFaultReport.html</title>
+
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+
+  <body>
+    <div>
+      <form action = "/RepairManagement/servlet/AddFaultReport" method = "post">
+        <table>
+          <tr>
+            <td>设备编号</td>
+            <td><input type="text" name="device"></td>
+          </tr>
+          <tr>
+            <td>客户ID</td>
+            <td><input type="text" name="customerId"></td>
+          </tr>
+          <tr>
+            <td>提交时间</td>
+            <td><input type="text" name="time"></td>
+          </tr>
+          <tr>
+            <td>预估价格</td>
+            <td><input type="text" name="price"></td>
+          </tr>
+          <tr>
+            <td>预估完成时间</td>
+            <td><input type="text" name="finish"></td>
+          </tr>
+          <tr>
+            <td>报修状态</td>
+            <td><input type="text" name="state"></td>
+          </tr>
+        </table>
+      </form>
+      <button onclick="commitFaultReport()">commit</button>
+    </div>
+  </body>
+  <script type="text/javascript">
+    function commitFaultReport() {
+      document.forms[0].submit();
+    }
+  </script>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>QueryFaultReport.html</title>
+
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+  <body>
+    <div>
+      <form action = "/RepairManagement/servlet/AddDevice" method = "post">
+        <table>
+          <tr>
+            <td>产品类型</td>
+            <td><input type="text" name="Type"></td>
+          </tr>
+          <tr>
+            <td>机器品牌</td>
+            <td><input type="text" name="Brand"></td>
+          </tr>
+          <tr>
+            <td>机器型号</td>
+            <td><input type="text" name="Model"></td>
+          </tr>
+          <tr>
+            <td>系列号</td>
+            <td><input type="text" name="Series"></td>
+          </tr>
+          <tr>
+            <td>缺少零件</td>
+            <td><input type="text" name="Lack"></td>
+          </tr>
+          <tr>
+            <td>机器故障现象</td>
+            <td><input type="text" name="FaultAppearance"></td>
+          </tr>
+          <tr>
+            <td>故障类型</td>
+            <td><input type="text" name="FaultType"></td>
+          </tr>
+          <tr>
+            <td>机器外观检查</td>
+            <td><input type="text" name="Surface"></td>
+          </tr>
+          <tr>
+            <td>开机口令</td>
+            <td><input type="text" name="Password"></td>
+          </tr>
+          <tr>
+            <td>重要资料</td>
+            <td><input type="text" name="ImpFile"></td>
+          </tr>
+          <tr>
+            <td>HDD</td>
+            <td><input type="text" name="HDD"></td>
+          </tr>
+          <tr>
+            <td>内存</td>
+            <td><input type="text" name="Memory"></td>
+          </tr>
+          <tr>
+            <td>外置PC卡</td>
+            <td><input type="text" name="PC"></td>
+          </tr>
+          <tr>
+            <td>AC适配器</td>
+            <td><input type="text" name="AC"></td>
+          </tr>
+          <tr>
+            <td>电池</td>
+            <td><input type="text" name="Battery"></td>
+          </tr>
+          <tr>
+            <td>外接光驱</td>
+            <td><input type="text" name="DVD"></td>
+          </tr>
+          <tr>
+            <td>其它</td>
+            <td><input type="text" name="Other"></td>
+          </tr>
+        </table>
+      </form>
+      <button onclick="commitDevice()">commit</button>
+    </div>
+  </body>
+  <script type="text/javascript">
+    function commitDevice() {
+      document.forms[0].submit();
+    }
+  </script>
+</html>

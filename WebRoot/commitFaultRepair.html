@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>QueryFaultRepair.html</title>
+
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+
+  <body>
+    <div>
+      <form action = "/RepairManagement/servlet/AddFaultRepair" method = "post">
+        <table>
+          <tr>
+            <td>维修人员</td>
+            <td><input type="text" name="person"></td>
+          </tr>
+          <tr>
+            <td>报修报告编号</td>
+            <td><input type="text" name="reportNo"></td>
+          </tr>
+          <tr>
+            <td>分配时间</td>
+            <td><input type="text" name="arrangeTime"></td>
+          </tr>
+          <tr>
+            <td>检测记录</td>
+            <td><input type="text" name="examinationRecord"></td>
+          </tr>
+          <tr>
+            <td>维修记录</td>
+            <td><input type="text" name="repairRecord"></td>
+          </tr>
+          <tr>
+            <td>维修检测时间</td>
+            <td><input type="text" name="repairTime"></td>
+          </tr>
+          <tr>
+            <td>工作量</td>
+            <td><input type="text" name="workload"></td>
+          </tr>
+          <tr>
+            <td>人工费</td>
+            <td><input type="text" name="manualCost"></td>
+          </tr>
+          <tr>
+            <td>材料费</td>
+            <td><input type="text" name="materialCost"></td>
+          </tr>
+          <tr>
+            <td>报修承诺</td>
+            <td><input type="text" name="commitment"></td>
+          </tr>
+          <tr>
+            <td>注意事项</td>
+            <td><input type="text" name="noticePoints"></td>
+          </tr>
+          <tr>
+            <td>维修状态</td>
+            <td><input type="text" name="state"></td>
+          </tr>
+          <tr>
+            <td>维修延迟程度</td>
+            <td><input type="text" name="delayDegree"></td>
+          </tr>
+        </table>
+      </form>
+      <button onclick="commitFaultRepair()">commit</button>
+    </div>
+  </body>
+  <script type="text/javascript">
+    function commitFaultRepair() {
+      document.forms[0].submit();
+    }
+  </script>
+</html>
